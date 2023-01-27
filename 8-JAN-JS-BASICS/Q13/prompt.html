@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Usecase</title>
+</head>
+<body>
+    <h1 id="age"></h1>
+    <script>
+        let age = document.getElementById("age")
+        let val = prompt("Enter your age")
+        if(val >= 18){
+            age.innerText = `You are old enough to drive`
+            console.log(`You are old enough to drive`)
+        }else{
+            age.innerText = `wait for ${18 - val} years to drive`
+            console.log(`wait for ${18 - val} years to drive`)
+        }
+    </script> 
+</body>
+</html>
